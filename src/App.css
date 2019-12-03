@@ -1,22 +1,71 @@
+body {
+  background: aliceblue;
+}
+
 .App {
+  text-align: center;
+  position: absolute;
+  width: 55%;
+  height: 55%;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.display-screen{
+  position: absolute;
+  width: 55%;
+  height: 40%;
+  left: 50%;
+  top: -30%;
+  transform: translate(-50%, -50%);
+  border: 3px solid green;
+}
+
+.color-input-form, .timer-input-form{
+  display: inline-block;
+  /* margin-right: 1%; */
+  margin-bottom: 1%;
+  width: 15%;
+}
+.timer-input-form{
+  width: 100%;
+}
+
+.timer-div {
+  display: inline-block;
+  text-align: left;
+  left: 25%;
+  position: absolute;
+}
+
+.btn-div {
+  display: inline-block;
+  margin-left: 20%;
+}
+
+.color-input-form input, .timer-input-form input{
+  width: 25%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+label[for=interval]{
+  margin-right: 16%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.label {
+  display: inline-block;
+  text-align: right;
 }
 
-.App-link {
-  color: #09d3ac;
+.action-btn {
+  border-radius: 3px;
+  border: 1px solid #ff8c69;
+  background-color: #ff8c69;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 8px 35px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
